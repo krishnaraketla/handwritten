@@ -1,6 +1,7 @@
 // Deployed backend URL. Replace this with your Hugging Face Space (or other
 // host) once it's live, e.g. "https://your-user-your-space.hf.space".
-const PROD_API_BASE = "https://YOUR-HF-USERNAME-YOUR-SPACE-NAME.hf.space";
+const PROD_API_BASE = "https://krishna-raketla-handwritten.hf.space";
+
 
 function resolveApiBase() {
   // Same-origin: FastAPI serves the frontend on :8000.
