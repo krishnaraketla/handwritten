@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handwritten — Upload</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="brand">
+        <a href="./" class="brand-mark">Handwritten</a>
+        <nav class="brand-nav">
+          <a href="./">upload</a>
+          <a href="./type.html">type</a>
+        </nav>
+      </header>
+
+      <div class="card">
+        <div class="step-label">Step 1 — Capture</div>
+        <h2 class="card-header">Upload your character set</h2>
+        <p class="card-sub">
+          Write <em>a–z</em>, then <em>A–Z</em>, then <em>0–9</em>, then
+          <em>! ? , . $ # ; :</em> on a sheet of paper, take a photo, and drop
+          it below. Characters should be roughly aligned in rows
+          (top-to-bottom, left-to-right). Dark ink on light paper works best.
+        </p>
+
+        <div id="upload-error" class="error hidden"></div>
+
+        <div id="dropzone" class="dropzone">
+          <strong id="dropzone-label">Drop a photo here, or click to choose</strong>
+          <p>JPG or PNG, ideally well-lit and roughly straight-on</p>
+          <input id="file-input" type="file" accept="image/*" />
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/upload.js"></script>
+  </body>
+</html>

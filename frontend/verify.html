@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handwritten — Verify</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="brand">
+        <a href="./" class="brand-mark">Handwritten</a>
+        <nav class="brand-nav">
+          <a href="./">upload</a>
+          <a href="./type.html">type</a>
+        </nav>
+      </header>
+
+      <div class="card">
+        <div class="step-label">Step 2 — Verify</div>
+        <h2 class="card-header">Match each shape to its character</h2>
+        <p class="card-sub">
+          We detected the shapes below in reading order (a–z, A–Z, 0–9, then
+          punctuation). If anything is in the wrong spot, drag it to the correct
+          slot. Click a glyph to remove it. Extras at the bottom can be dragged
+          into any slot.
+        </p>
+
+        <div id="verify-warning" class="warning hidden"></div>
+        <div id="verify-missing" class="warning hidden"></div>
+
+        <div id="glyph-grid" class="glyph-grid"></div>
+
+        <div id="extras-section" class="hidden">
+          <div class="step-label" style="margin-top: 28px">
+            Extras (<span id="extras-count">0</span>)
+          </div>
+          <p class="card-sub">Drag any of these into an empty slot above.</p>
+          <div id="extras-grid" class="glyph-grid"></div>
+        </div>
+
+        <div class="actions">
+          <button id="confirm-btn" type="button" class="btn">Looks good — start typing</button>
+          <button id="reupload-btn" type="button" class="btn btn-outlined">Re-upload photo</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/verify.js"></script>
+  </body>
+</html>

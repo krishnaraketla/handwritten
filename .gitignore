@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / tooling
+.vscode/
+.idea/
+.cursor/
+
+# Node (if frontend ever adds one)
+node_modules/
+dist/
+.vite/
+
+# Local secrets
+.env
+.env.local

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handwritten — Type</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="brand">
+        <a href="./" class="brand-mark">Handwritten</a>
+        <nav class="brand-nav">
+          <a href="./">upload</a>
+          <a href="./type.html">type</a>
+        </nav>
+      </header>
+
+      <div id="render-error" class="error hidden"></div>
+
+      <div class="editor-card">
+        <div class="editor-toolbar">
+          <div class="toolbar-group">
+            <button id="clear-btn" type="button" class="btn-link" disabled>clear</button>
+            <button id="png-btn" type="button" class="btn" disabled>PNG ↓</button>
+          </div>
+        </div>
+
+        <div id="editor-stage" class="editor-stage">
+          <span class="editor-margin"></span>
+          <div id="editor-content" class="editor-content">
+            <canvas id="editor-canvas" class="editor-canvas"></canvas>
+            <div id="editor-caret" class="editor-caret hidden"></div>
+            <textarea
+              id="editor-input"
+              class="editor-input"
+              spellcheck="false"
+              autocapitalize="none"
+              autocorrect="off"
+              aria-label="Type your message"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="glyphs-available">
+        <span class="glyphs-available-label">Glyphs available</span>
+        <span class="pill">a–z</span>
+        <span class="pill">A–Z</span>
+        <span class="pill">0–9</span>
+        <span class="pill">! ?</span>
+        <span class="pill">, .</span>
+        <span class="pill">$ #</span>
+        <span class="pill">; :</span>
+      </div>
+
+      <div class="actions" style="justify-content: center">
+        <button id="reupload-glyphs-btn" type="button" class="btn btn-outlined">
+          Re-upload handwriting
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="./js/type.js"></script>
+  </body>
+</html>
